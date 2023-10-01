@@ -1,0 +1,255 @@
+/* ==================== */
+/* Global Styles */
+/* ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.8;
+    padding-bottom: 2em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    color: #3b8cbb;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #3b8cbb;
+}
+
+/* ==================== */
+/* Header Styles */
+/* ==================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    color: #d8dcdc;
+    transition: background-color 0.3s ease-in-out;
+    padding: 1em 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 1em;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: #d8dcdc;
+}
+
+header nav ul li a.scrolled {
+    color: #3b8cbb;
+}
+
+header nav ul li a:hover,
+header nav ul li a.scrolled:hover {
+    color: #3b8cbb;
+}
+.om-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #d8dcdc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.om-wrapper:hover {
+    border-color: #3b8cbb;
+    background-color: rgba(0, 121, 107, 0.1);
+}
+
+header.scrolled .om-wrapper {
+    border-color: #3b8cbb;
+}
+
+
+/* ==================== */
+/* Hero Section Styles */
+/* ==================== */
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d8dcdc;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10%;
+}
+
+#scroll-arrow {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    color: #f4f4f4;
+}
+
+#photo-credit {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.7em;
+    background: rgba(52, 53, 51, 0.6);
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* ==================== */
+/* About Section Styles */
+/* ==================== */
+.overlapping-section {
+    background: #ffffff;
+    padding: 3em 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+#about {
+    background-color: #e9f4f8;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: nowrap;
+}
+
+#about-photo {
+    width: 200px;
+    border-radius: 5%;
+}
+
+.about-text p {
+    text-align: justify;
+    margin-bottom: 1.5em;
+}
+
+.about-text p:first-of-type {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+/* ==================== */
+/* Project Section Styles */
+/* ==================== */
+#projects {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    gap: 2em;
+}
+
+.project-image {
+    width: 100px;
+    border-radius: 8px;
+}
+
+.project-details h3 {
+    margin-bottom: 1em;
+}
+
+.project-details a {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* ==================== */
+/* Contact Section Styles */
+/* ==================== */
+
+#contact {
+    background-color: #f9f9f9;
+    padding: 3em 10%;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #3b8cbb;
+}
+
+#contact p {
+    font-size: 1.25em;
+    margin-bottom: 2em;
+    line-height: 1.6;
+}
+
+
+/* ==================== */
+/* Footer Styles */
+/* ==================== */
+footer {
+    background: #ffffff;
+    padding: 1em 0;
+    text-align: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content p {
+    margin: 0.5em 0;
+    color: #333;
+    font-size: 0.9em;
+}
+
+/* ==================== */
+/* Misc Styling */
+/* ==================== */
+#about h2,
+#projects h2 {
+    color: #3b8cbb;
+}

@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Owen Matejka</title>
+    <meta charset="UTF-8">
+    <title>Owen Matejka</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
+
 <body>
+    <!-- Header / Navigation Bar -->
+    <header>
+        <nav id="left-nav">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/owen-matejka" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <nav id="home-button-nav">
+            <ul>
+                <li>
+                    <div class="om-wrapper">
+                        <a href="#hero" id="home-button">O M</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav id="right-nav">
+            <ul>
+                <li><a href="https://www.github.com/owenmatejka" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<h1>hi there!</h1>
+    <!-- Hero Section -->
+    <section id="hero" style="background-image: url('images/mountainsbackground.jpg');">
+        <h1>Owen Matejka</h1>
+        <a href="#about" id="scroll-arrow">&#8595;</a>
+        <div id="photo-credit">Photo by Stephan Seeber</div>
+    </section>
+    
+    <!-- About Me Section -->
+    <section id="about" class="overlapping-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="images/biophoto.jpg" alt="Photo of me" id="about-photo">
+            <div class="about-text">
+                <p>Hello! I'm Owen Matejka, a Computer Science and Engineering student with a passion for technology and the outdoors.</p>
+                <p>As the president of the SCU Ski & Snowboard Club, I enjoy fostering a community of ski and snowboard enthusiasts by organizing events and trips to the mountains. I am also a proud member of the Men's Ultimate Frisbee team and the Association for Computing Machinery.</p>
+                <p>When I'm not busy with my academics or involved in club activities, you can find me hiking in the hills surrounding the Bay, building random things, and, of course, carving down the slopes.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="overlapping-section">
+        <h2>Projects</h2>
+        
+        <!-- Game Guardian -->
+        <div class="project">
+            <img src="images/gameguardianlogo.jfif" alt="Game Guardian" class="project-image">
+            <div class="project-details">
+                <h3>Game Guardian</h3>
+                <p>An application and developer API designed to seamlessly add parental controls to video games.</p>
+                <p><strong>Technologies Used:</strong> React Native, Express, Lua</p>
+                <a href="https://devpost.com/software/gamesafe" target="_blank">View Project</a>
+            </div>
+        </div>
+        
+        <!-- SafeBronc -->
+        <div class="project">
+            <img src="images/safebronclogo.png" alt="SafeBronc" class="project-image">
+            <div class="project-details">
+                <h3>SafeBronc</h3>
+                <p>Making parties safer one step at a time. An event management app with attendee safety prioritized. </p>
+                <p><strong>Technologies Used:</strong> React Native, Node.js, Twillio</p>
+                <a href="https://devpost.com/software/safebronc" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/62XB9IbMnxQ?si=YSk9UrdwySfBe_mB&amp;controls=0&amp;start=39" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="overlapping-section">
+        <h2>Contact</h2>
+        <p><i class="fas fa-envelope"></i> Feel free to reach out to me at <a href="mailto:omatejka@scu.edu">omatejka@scu.edu</a></p>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>Made with ❤️ by Owen Matejka</p>
+                <p>Updated in October 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
