@@ -186,6 +186,39 @@ h2 {
     color: #333;
 }
 
+#current-project {
+    background-color: #f4f7f9;
+    color: #333;
+}
+
+#current-project .project {
+    padding: .5em;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(59, 140, 187, 0.1);
+}
+
+#current-project .project-image {
+    width: 150px;
+}
+
+#current-project h2 {
+    color: #3b8cbb;
+    border-bottom: 2px solid #3b8cbb;
+    display: inline-block;
+}
+
+.active-badge {
+    background-color: #3b8cbb;
+    color: white;
+    font-size: 0.7em;
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-left: 10px;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
 .project {
     display: flex;
     align-items: center;
@@ -205,6 +238,12 @@ h2 {
 .project-details a {
     display: inline-block;
     margin-top: 1em;
+}
+
+.project-details .disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.75;
 }
 
 /* ==================== */
